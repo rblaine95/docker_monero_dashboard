@@ -1,6 +1,7 @@
 # Monero Dashboard
 A Docker Image for [jnbarlow/monero-dashboard](https://github.com/jnbarlow/monero-dashboard)
 
+[![Github tag (latest by date)][github-tag-badge]][github-tag-link]  
 [![GitHub Workflow Status (branch)][github-actions-badge]][github-actions-link]  
 
 Usage:
@@ -27,5 +28,7 @@ I just built this docker image, go to the [jnbarlow/monero-dashboard](https://gi
 * [MorphToken.com](https://www.morphtoken.com)  
 * [Haveno](https://github.com/haveno-dex/haveno)
 
+[github-tag-badge]: https://img.shields.io/github/v/tag/rblaine95/docker_monero_dashboard "Github tag (latest by date)"
+[github-tag-link]: https://github.com/rblaine95/docker_monero_dashboard/tags
 [github-actions-badge]: https://img.shields.io/github/workflow/status/rblaine95/docker_monero_dashboard/Docker/master "Github Workflow Status (master)"
 [github-actions-link]: https://github.com/rblaine95/docker_monero_dashboard/actions?query=workflow%3ADocker
