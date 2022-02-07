@@ -6,7 +6,8 @@ A Docker Image for [jnbarlow/monero-dashboard](https://github.com/jnbarlow/moner
 
 Usage:
 ```sh
-$ docker run --name monero-dashboard \
+$ docker run -itd \
+    --name monero-dashboard \
     -e MONERO_HOST=my-xmr-node.example.com \
     -e MONERO_PORT=18081 \
     -e TICKER=true \
