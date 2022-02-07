@@ -1,5 +1,7 @@
 FROM node:lts-slim
 
+ARG TAG=v1.0.9
+
 RUN apt-get update \
     && apt-get dist-upgrade -y \
     && apt-get install -y git tini \
@@ -10,7 +12,7 @@ RUN apt-get update \
     && chown -R 1000:1000 /opt/monero-dashboard
 
 USER node
-RUN git clone https://github.com/jnbarlow/monero-dashboard.git /opt/monero-dashboard
+RUN git clone https://github.com/jnbarlow/monero-dashboard.git /opt/monero-dashboard -b ${TAG}
 
 ENV MONERO_HOST 127.0.0.1
 ENV MONERO_PORT 18081
