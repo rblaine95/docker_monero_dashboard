@@ -1,0 +1,29 @@
+name: Docker
+
+on: [workflow_dispatch, push]
+
+env:
+  IMAGE_NAME: monero-dashboard
+
+jobs:
+  package:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to Github
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GHCR_PAT }}
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+      - name: Install Buildx
+        uses: docker/setup-buildx-action@v1
+      - name: Build image
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          platforms: linux/amd64,linux/arm64/v8,linux/arm/v7
+          tags: ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:latest
