@@ -31,5 +31,5 @@ I just built this docker image, go to the [jnbarlow/monero-dashboard](https://gi
 
 [github-tag-badge]: https://img.shields.io/github/v/tag/rblaine95/docker_monero_dashboard "Github tag (latest by date)"
 [github-tag-link]: https://github.com/rblaine95/docker_monero_dashboard/tags
-[github-actions-badge]: https://img.shields.io/github/workflow/status/rblaine95/docker_monero_dashboard/Docker/master "Github Workflow Status (master)"
+[github-actions-badge]: https://img.shields.io/github/actions/workflow/status/rblaine95/docker_monero_dashboard/docker.yml?branch=master "Github Workflow Status (master)"
 [github-actions-link]: https://github.com/rblaine95/docker_monero_dashboard/actions?query=workflow%3ADocker
