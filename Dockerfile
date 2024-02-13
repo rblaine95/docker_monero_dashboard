@@ -1,6 +1,6 @@
 FROM node:lts-slim
 
-ARG TAG=v1.0.11
+ARG TAG=v1.1.0
 
 RUN apt-get update \
     && apt-get dist-upgrade -y \
